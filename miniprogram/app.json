@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/movie/movie",
+    "pages/profile/profile",
+    "pages/comment/comment"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5ebb8d",
+    "navigationBarTitleText": "MovieCloud彩云影院",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#5ebb8d",
+    "list": [{
+      "pagePath": "pages/movie/movie",
+      "text": "影院咨询",
+      "iconPath": "images/film.png",
+      "selectedIconPath": "images/film-actived.png"
+    },{
+      "pagePath": "pages/profile/profile",
+      "text": "我的空间",
+      "iconPath": "images/profile.png",
+      "selectedIconPath": "images/profile-actived.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

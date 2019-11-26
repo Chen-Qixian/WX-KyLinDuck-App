@@ -1,0 +1,28 @@
+<view class="profile">
+  <view class="profile-img">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <open-data type="userNickName" class="profile-name"></open-data>
+</view>
+
+<view class="userInfo">
+  <button open-type="getUserInfo" bindgetuserinfo="onGotUserInfo" wx:if="{{first}}">
+    展开用户信息
+  </button>
+  <button wx:else bindtap="toggle">
+    <text wx:if="{{!showDetail}}">展开用户信息</text>
+    <text wx:else>收起用户信息</text>
+  </button>
+</view>
+
+<view wx:if="{{showDetail}}">
+  <view class="infoDetail">昵称：{{userInfo.nickName}}</view>
+  <view class="infoDetail">国家：{{userInfo.country}}</view>
+  <view class="infoDetail">地区：{{userInfo.province}} {{userInfo.city}}</view>
+  <view class="infoDetail">性别：
+    <text wx:if="{{userInfo.gender == 1}}">男</text>
+    <text wx:else>女</text>
+  </view>
+</view>
+
+<view class="developer">彩云科技@陈麒先 荣誉出品</view>

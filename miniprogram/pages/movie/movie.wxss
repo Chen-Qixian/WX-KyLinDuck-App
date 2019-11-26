@@ -1,0 +1,44 @@
+.movie {
+  height: 300rpx;
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+
+.movie-img {
+  width: 200rpx;
+  height: 100%;
+  margin-right: 20rpx;
+}
+
+.movie-info {
+  flex: 1;
+}
+
+.movie-title {
+  color: #666;
+  font-size: 40rpx;
+  font-weight: bolder;
+  margin-bottom: 20rpx;
+}
+
+.movie-rate {
+  color: #f40;
+  font-size: 36rpx;
+  line-height: 36rpx;
+  height: 36rpx;
+}
+
+.movie-cast {
+  line-height: 36rpx;
+  word-wrap: keep-all;
+  margin: 20rpx 0;
+}
+
+.movie-comment{
+  height: 60rpx;
+  background: #5ebb8d;
+  color: #fff;
+  font-size: 24rpx;
+  margin-top: 120rpx;
+}

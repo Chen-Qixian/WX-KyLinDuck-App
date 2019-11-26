@@ -1,0 +1,14 @@
+{
+  "name": "miniprogram",
+  "version": "1.0.0",
+  "description": "LingoCloud Weixin Mini APP Program",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris.Chen",
+  "license": "ISC",
+  "dependencies": {
+    "vant-weapp": "^0.5.23"
+  }
+}
