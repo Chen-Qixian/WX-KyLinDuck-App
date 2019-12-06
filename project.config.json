@@ -67,6 +67,12 @@
 					"pathName": "pages/profile/profile",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/qabot/qabot",
+					"pathName": "pages/qabot/qabot",
+					"scene": null
 				}
 			]
 		}
