@@ -1,0 +1,148 @@
+.background {
+  background-color: #f8f8f8;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.wrapper {
+  padding: 40rpx;
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 20rpx;
+  box-sizing: border-box;
+}
+
+.header-title {
+  border-bottom: 1rpx solid #ddd;
+}
+
+.header-title .main {
+  font-size: 36rpx;
+  font-weight: bolder;
+}
+
+.header-title .badge {
+  font-size: 24rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  text-align: center;
+  color: white;
+  background-color: #5ebb8d;
+  border-radius: 12rpx;
+  padding: 5rpx 10rpx;
+  margin-left: 10rpx;
+}
+
+.header-title .sub-title {
+  font-size: 26rpx;
+  color: #999;
+  margin: 30rpx 0;
+}
+
+.config-list {
+  margin: 30rpx 0 0 0;
+}
+
+.number1 , .number2{
+  font-size: 40rpx;
+  font-weight: bolder;
+  margin-left: -43rpx;
+  float: left;
+  margin-top: -10rpx;
+}
+
+.settings {
+  border-bottom: 1px solid #eee;
+  margin: 20rpx 0 20rpx 50rpx;
+  padding: 20rpx 0;
+}
+
+.settings .settings-title {
+  font-size: 36rpx;
+  color: #424242;
+  line-height: 40rpx;
+  height: 40rpx;
+}
+
+.settings .details {
+  box-sizing: border-box;
+  border: 2rpx solid #eee;
+  padding: 16rpx 30rpx;
+  margin: 20rpx 0;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  color: #333; 
+  
+}
+
+/* 
+  设置单行文本溢出隐藏
+  1.需要width
+  2.需要inline-block否则无法设置行级元素宽度
+ */
+.settings .details .setTime {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 520rpx;
+  display: inline-block;
+}
+
+.settings .details .value {
+  color: #999;
+}
+.settings .details .input-icon {
+  height: 30rpx;
+  width: 30rpx;
+  float: right;
+}
+
+.favorite {
+  margin: 20rpx 0 0 50rpx;
+  padding: 20rpx 0;
+}
+
+.favorite .fav-title {
+  font-size: 36rpx;
+  color: #424242;
+  line-height: 40rpx;
+  height: 40rpx;
+}
+
+.favorite .content {
+  line-height: 40rpx;
+  font-size: 26rpx;
+  color: #999;
+  margin-top: 20rpx;
+}
+
+.favorite .content .caiyun-tag {
+  color: #5ebb8d;
+}
+
+.info {
+  font-size: 26rpx;
+  color: #999;
+  position: fixed;
+  bottom: 150rpx;
+  text-align: center;
+  height: 30rpx;
+  line-height: 30rpx;
+  width: 100%;
+}
+
+.subscribe-btn {
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: #5ebb8d;
+  border-radius: 0;
+  line-height: 100rpx;
+  text-align: center;
+}

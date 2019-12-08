@@ -1,0 +1,39 @@
+<view class="background">
+  <view class="wrapper">
+    <view class="header-title">
+      <view class="main">每日天气预报订阅
+        <text class="badge">限时免费</text>
+      </view>
+      <view class="sub-title">不需要每天打开应用，也能提前预知每日天气变化哦</view>
+    </view>
+
+    <view class="config-list">
+      <view class="settings">
+        <view class="number1">1.</view>
+        <view class="settings-title">推送设置</view>
+        <view class="details">
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            天气定位：<text class="value">{{array[index]}}</text>
+            <!-- <image src="../../image/location_icon.png" class="input-icon"></image> -->
+          </picker>
+        </view>
+
+        <view class="details">
+          <picker mode="time" value="{{settingTime}}" start="01:00" end="23:00" bindchange="timeChange">
+            接收时间：
+            <text class="value">每天 {{settingTime}}</text>
+            <!-- <image src="../../image/timer_icon.png" class="input-icon"></image> -->
+          </picker>
+        </view>
+      </view>
+      <view class="favorite">
+        <view class="number2">2.</view>
+        <view class="fav-title">关注【彩云天气】公众号</view>
+        <view class="content">天气预报通过公众号通知，记得关注
+          <text class="caiyun-tag">【彩云天气】</text>公众号，确保可以接收到预报哦！</view>
+      </view>
+    </view>
+  </view>
+  <view class="info">-- 更多天气类型预报提醒敬请期待 --</view>
+  <view class="subscribe-btn" bindtap="confirmSubscription">确认订阅</view>
+</view>
