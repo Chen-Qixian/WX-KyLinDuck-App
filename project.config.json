@@ -79,6 +79,13 @@
 					"id": -1,
 					"name": "pages/addques/addques",
 					"pathName": "pages/addques/addques",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/ansques/ansques",
+					"pathName": "pages/ansques/ansques",
 					"scene": null
 				}
 			]
