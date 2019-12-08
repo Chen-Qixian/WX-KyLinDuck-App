@@ -1,0 +1,109 @@
+/* components/modal.wxss */
+.mask{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 99999;
+}
+
+.modal{
+  position: fixed;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 620rpx;
+  height: 702rpx;
+  background-color: #fff;
+  border-radius: 16rpx;
+  z-index: 199999;
+}
+
+.title {
+  font-size: 36rpx;
+  text-align: center;
+  margin: 15px 0px;
+  color: #333333;
+}
+
+.modal-btn-wrapper{
+  display: flex;
+  /* position: absolute;
+  bottom: 0; */
+  flex-direction: row;
+  margin-top: 20px;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-top: 1px solid #E6E6E6;
+  background-color: #fff;
+  /* border-top: 2rpx solid rgba(7,17,27,0.1); */
+}
+
+.cancel-btn, .confirm-btn{
+  flex: 1;
+  color:#999999;
+  height: 100rpx;
+  width: 200rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 32rpx;
+}
+
+.enable {
+  color: #00B977
+}
+
+.cancel-btn{
+  color: #999999;
+  border-right: 2rpx solid rgba(7,17,27,0.1);
+}
+
+.weather-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.icon-view {
+  flex: auto;
+  vertical-align: middle;
+  text-align: center;
+  padding: 28rpx 32rpx;
+}
+
+.icon {
+  position: relative
+}
+
+.icon-selected {
+  position: absolute;
+  height: 48rpx;
+  width: 48rpx;
+  right: 12rpx;
+  bottom: 12rpx;
+}
+
+.icon-image {
+  height: 128rpx;
+  width: 128rpx;
+  border: 3rpx solid #ccc;
+  border-radius: 50%;
+}
+
+.icon-bg {
+  width:100%;
+  display: block;
+}
+
+.icon-view text {
+  text-align: center;
+  font-size: 28rpx;
+  color: #333333;
+}
+
