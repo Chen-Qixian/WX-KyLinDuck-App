@@ -72,6 +72,13 @@
 					"id": -1,
 					"name": "pages/qabot/qabot",
 					"pathName": "pages/qabot/qabot",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/addques/addques",
+					"pathName": "pages/addques/addques",
 					"scene": null
 				}
 			]
