@@ -116,14 +116,14 @@
   height: 40rpx;
 }
 
-.favorite .content {
+.content {
   line-height: 40rpx;
   font-size: 26rpx;
   color: #999;
   margin-top: 20rpx;
 }
 
-.favorite .content .caiyun-tag {
+.content .caiyun-tag {
   color: #5ebb8d;
 }
 
@@ -149,5 +149,16 @@
   border-radius: 0;
   line-height: 100rpx;
   text-align: center;
+  box-sizing: border-box;
+}
+
+.questionContent {
+  height: 200rpx;
+  border: 2rpx solid #eee;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  width: 100%;
+  margin: 20rpx 0;
+  padding: 20rpx;
   box-sizing: border-box;
 }

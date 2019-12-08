@@ -11,6 +11,9 @@
       <view class="settings">
         <view class="number1">1.</view>
         <view class="settings-title">步骤一</view>
+        <view class="content">
+          请留下您的<text class="caiyun-tag">【尊姓大名】</text>以及您指定的<text class="caiyun-tag">【考核学员】</text>
+        </view>
         <view class="details">
           <picker bindchange="contriPickerChange" value="{{contriIndex}}" range="{{contriArray}}">
             题目贡献者：<text class="value">{{contriArray[contriIndex]}}</text>
@@ -29,7 +32,9 @@
         <view class="number2">2.</view>
         <view class="fav-title">步骤二</view>
         <view class="content">请灵魂导师
-          <text class="caiyun-tag">【在这里】</text>写下你的题目！</view>
+          <text class="caiyun-tag">【在这里】</text>写下您的考核内容！
+        </view>
+        <textarea placeholder="最多可输入140个字符哦～" bindconfirm="inputChange" bindinput="inputChange" class="questionContent" maxlength="140"></textarea>
       </view>
     </view>
   </view>
