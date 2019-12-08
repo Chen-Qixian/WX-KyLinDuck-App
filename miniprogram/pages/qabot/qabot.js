@@ -1,66 +1,16 @@
-// pages/qabot/qabot.js
+var app = getApp();
 Page({
-
-  /**
-   * Page initial data
-   */
-  data: {
-
+  data: {},
+  /** 跳转至新增问题页面 */
+  addQuestion: function () {
+    wx.navigateTo({
+      url: '../addques/addques',
+    })
   },
-
-  /**
-   * Lifecycle function--Called when page load
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page show
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page hide
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page unload
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * Page event handler function--Called when user drop down
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * Called when page reach bottom
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * Called when user click on the top right corner to share
-   */
-  onShareAppMessage: function () {
-
+  /** 跳转至答题页面 */
+  ansQuestion: function () {
+    wx.navigateTo({
+      url: '../ansques/ansques',
+    })
   }
 })

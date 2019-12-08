@@ -1,1 +1,44 @@
-/* pages/qabot/qabot.wxss */
+page {
+  height: 100%;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.btn {
+  height: 100rpx;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  border-radius: 0;
+  line-height: 100rpx;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.addQuestion {
+  color: white;
+  background-color: #5ebb8d;
+  top: 30%;
+  border-radius: 10rpx;
+}
+
+.ansQuestion {
+  color: yellow;
+  background-color: #f40;
+  top: 60%;
+  font-size: 40rpx;
+  font-weight: bold;
+  border-radius: 10rpx;
+}

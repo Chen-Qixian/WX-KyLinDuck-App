@@ -1,2 +1,5 @@
-<!--pages/qabot/qabot.wxml-->
-
+<view class="wrapper">
+  <image src="../../images/background.png" class="background"></image>
+  <view class="btn addQuestion" bindtap="addQuestion">贡献题目</view>
+  <view class="btn ansQuestion" bindtap="ansQuestion">接受挑战!</view>
+</view>
