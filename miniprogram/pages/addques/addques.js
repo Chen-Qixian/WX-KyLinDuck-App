@@ -10,12 +10,12 @@ Page({
   },
   contriPickerChange: function (e) {
     this.setData({
-      contriIndex: e.detail.value
+      contriIndex: parseInt(e.detail.value)
     })
   },
   ansPickerChange: function (e) {
     this.setData({
-      ansIndex: e.detail.value
+      ansIndex: parseInt(e.detail.value)
     })
   },
   inputChange: function(e) {
@@ -37,7 +37,7 @@ Page({
       title: '题目入库中',
       mask: true
     })
-    console.log(this.data.question, this.data.contriIndex, this.data.ansIndex);
+    // console.log(this.data.question, this.data.contriIndex, this.data.ansIndex);
     db.collection('questionBase').add({
       data: {
         question: this.data.question,

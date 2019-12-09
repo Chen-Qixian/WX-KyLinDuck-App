@@ -2,7 +2,10 @@ var app = getApp();
 Page({
   data: {
     questionList: [],
-    showQuestionModal: true
+    showQuestionModal: false,
+    curQuestion: '在我东南45公里以外正在下小雨，我这里雾霾极其严重。',
+    curMentor: '匿名反馈',
+    curStudent: '匿名反馈1'
   },
   /** 跳转至新增问题页面 */
   addQuestion: function () {
@@ -29,25 +32,20 @@ Page({
   },
   /** 显示题目组件 */
   ansQuestion: function () {
-    this.setData({showQuestionModal: true})
-    // wx.showLoading({
-    //   title: '题目生成中',
-    // })
-    // let list = this.data.questionList;
-    // this.shuffle(list);
-    // this.setData({
-    //   questionList: list
-    // })
-    // setTimeout(() => {
-    //   wx.hideLoading();
-    //   wx.showModal({
-    //     title: '导师考核，现在开始',
-    //     content: this.data.questionList[0].question,
-    //     confirmText: '通过',
-    //     cancelText: '不合格',
-    //     complete: this.updateList()
-    //   })
-    // }, 500)
+    wx.showLoading({
+      title: '题目生成中',
+    })
+    
+    setTimeout(() => {
+      wx.hideLoading();
+      this.setData({ 
+        curQuestion: this.data.questionList[0].question,
+        curMentor: parseInt(this.data.questionList[0].contriIndex),
+        curStudent: parseInt(this.data.questionList[0].ansIndex),
+        showQuestionModal: true     
+      })
+      this.updateList();
+    }, 300)
   },
   getQuestions: function () {
     let _this = this;
@@ -57,6 +55,11 @@ Page({
       _this.setData({
         questionList: res.result.data
       })
+    })
+    let list = this.data.questionList;
+    this.shuffle(list);
+    this.setData({
+      questionList: list
     })
   },
 
