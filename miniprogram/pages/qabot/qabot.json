@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    
+    "question-modal": "../../components/question-modal/question-modal"
   }
 }

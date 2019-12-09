@@ -2,4 +2,5 @@
   <image src="../../images/background.png" class="background"></image>
   <view class="btn addQuestion" bindtap="addQuestion">贡献题目</view>
   <view class="btn ansQuestion" bindtap="ansQuestion">接受挑战!</view>
+  <question-modal show="{{showQuestionModal}}"></question-modal>
 </view>
