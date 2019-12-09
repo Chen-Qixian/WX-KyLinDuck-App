@@ -1,4 +1,4 @@
-# 微信小程序-电影资讯查询
+# 微信小程序- KyLinDuck麒麟鸭科技
 
 使用了云开发的三大基础能力：
 
@@ -11,3 +11,17 @@
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 
 - [幕课相关课程](https://www.imooc.com/learn/1121)
+
+## Log
+
+V0.0.1
+- 计算器
+
+V0.1.0
+- 电影资讯
+
+V0.2.0
+- 用户状态
+
+V0.3.0
+- 问答页
