@@ -24,7 +24,7 @@ Page({
       newQuestionList = this.data.questionList;
     }
     this.shuffle(newQuestionList);
-    this.setData(newQuestionList);
+    this.setData({questionList: newQuestionList});
   },
   /** 跳转至答题页面 */
   ansQuestion: function () {
@@ -63,7 +63,6 @@ Page({
    */
   onLoad: function (options) {
     if (this.data.questionList.length === 0) {
-      console.log('no questions');
       this.getQuestions();
     }
   }

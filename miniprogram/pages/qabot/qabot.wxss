@@ -16,29 +16,27 @@ page {
 }
 
 .btn {
+  color: #5ebb8d;
+  background-color: transparent;
+  border: 4rpx solid #5ebb8d;
   height: 100rpx;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
   width: 50%;
   border-radius: 0;
-  line-height: 100rpx;
+  line-height: 94rpx;
   text-align: center;
   box-sizing: border-box;
 }
 
 .addQuestion {
-  color: white;
-  background-color: #5ebb8d;
-  top: 30%;
+  top: 60%;
   border-radius: 10rpx;
 }
 
 .ansQuestion {
-  color: yellow;
-  background-color: #f40;
-  top: 60%;
-  font-size: 40rpx;
+  top: 75%;
   font-weight: bold;
   border-radius: 10rpx;
 }
