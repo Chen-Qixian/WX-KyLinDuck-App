@@ -1,14 +1,14 @@
 <view class='mask' wx:if='{{show}}' bindtap='clickMask'></view>
 <view class='modal' wx:if='{{show}}'>
   <image src="../../images/component_bg.jpg" class="bg"></image>
-  <view class="title">我要反馈天气开始</view>
+  <view class="title">导师考核，现在开始～</view>
   <view class="question-content">
     <view class="student">
-      反馈者 <text class="badge orange">匿名反馈</text>
+      挑战学员 <text class="badge orange">{{ansArray[student]}}</text>
     </view>
-    <view class="question">在我东南45公里以外正在下小雨，我这里雾霾极其严重。</view>
+    <view class="question">{{question}}</view>
     <view class="mentor">
-      反馈者 <text class="badge green">匿名反馈</text>
+      灵魂导师 <text class="badge green">{{contriArray[mentor]}}</text>
     </view>
   </view>
   <view class="modal-btn-wrapper">
