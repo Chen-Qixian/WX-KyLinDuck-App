@@ -37,8 +37,9 @@
 
 .movie-comment{
   height: 60rpx;
+  line-height: 60rpx !important;
   background: #5ebb8d;
   color: #fff;
-  font-size: 24rpx;
+  font-size: 28rpx !important;
   margin-top: 120rpx;
 }
