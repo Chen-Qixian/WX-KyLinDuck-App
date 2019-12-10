@@ -1,6 +1,6 @@
 // components/login-modal/login-modal.js
 const ROOMNAME = 'ChrisChen'
-const PASSWORD = 'laoqi1215'
+const PASSWORD = 'laoqi1219'
 Component({
   /**
    * Component properties
