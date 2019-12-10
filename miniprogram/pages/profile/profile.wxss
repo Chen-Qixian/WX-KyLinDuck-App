@@ -56,3 +56,10 @@
   height: 36rpx;
   line-height: 36rpx;
 }
+
+.logo {
+  border-radius: 50%;
+  height: 150rpx;
+  width: 150rpx;
+  margin: 40rpx auto;
+}

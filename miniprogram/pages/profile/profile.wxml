@@ -13,4 +13,6 @@
   <van-cell title="性别" value="{{userInfo.gender}}" icon="friends-o"/>
 </van-cell-group>
 
+<image src="../../images/duck.png" class="logo"></image>
+
 <view class="developer">KyLinDuck麒麟鸭科技@陈麒先 荣誉出品</view>
