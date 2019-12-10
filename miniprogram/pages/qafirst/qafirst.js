@@ -1,8 +1,14 @@
 // pages/qafirst/qafirst.js
 Page({
+  data: {
+    showLoginModal: false
+  },
   enter: function() {
-    wx.navigateTo({
-      url: '../qabot/qabot',
+    this.setData({
+      showLoginModal: true
     })
+    // wx.navigateTo({
+    //   url: '../qabot/qabot',
+    // })
   }
 })

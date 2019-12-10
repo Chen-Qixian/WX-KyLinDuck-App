@@ -2,4 +2,5 @@
   <image src="../../images/background.png" class="background"></image>
   <image src="../../images/title.png" class="title"></image>
   <view class="btn enter" bindtap="enter">点我进入</view>
+  <login-modal show="{{showLoginModal}}"></login-modal>
 </view>
