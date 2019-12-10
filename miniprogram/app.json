@@ -4,7 +4,8 @@
     "pages/profile/profile",
     "pages/comment/comment",
     "pages/qabot/qabot",
-    "pages/addques/addques"
+    "pages/addques/addques",
+    "pages/qafirst/qafirst"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -18,7 +19,7 @@
     "selectedColor": "#5ebb8d",
     "list": [
       {
-        "pagePath": "pages/qabot/qabot",
+        "pagePath": "pages/qafirst/qafirst",
         "text": "麒麟问问",
         "iconPath": "images/qabot.png",
         "selectedIconPath": "images/qabot-actived.png"
