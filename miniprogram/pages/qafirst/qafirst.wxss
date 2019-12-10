@@ -1,0 +1,46 @@
+page {
+  height: 100%;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  position: fixed;
+}
+
+.title {
+  position: fixed;
+  height: 250rpx;
+  width: 1000rpx;
+  top: 23%;
+  left: 22%;
+}
+
+.btn {
+  color: #5ebb8d;
+  background-color: transparent;
+  border: 4rpx solid #5ebb8d;
+  height: 100rpx;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  border-radius: 0;
+  line-height: 94rpx;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: -4rpx 8rpx 2rpx #ccc;
+}
+
+.enter {
+  top: 75%;
+  border-radius: 10rpx;
+}
