@@ -33,20 +33,28 @@ page {
   left: 50%;
   transform: translateX(-50%);
   width: 50%;
-  border-radius: 0;
   line-height: 94rpx;
   text-align: center;
   box-sizing: border-box;
+  border-radius: 10rpx;
   box-shadow: -4rpx 8rpx 2rpx #ccc;
 }
 
 .addQuestion {
   top: 60%;
-  border-radius: 10rpx;
 }
 
 .ansQuestion {
   top: 75%;
   font-weight: bold;
-  border-radius: 10rpx;
+}
+
+.administrator {
+  top: 88%;
+  left: 25%;
+  position: fixed;
+  text-align: center;
+  width: 50%;
+  font-size: 28rpx;
+  color: #ccc;
 }

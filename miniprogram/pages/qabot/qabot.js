@@ -3,7 +3,8 @@ Page({
   data: {
     questionList: [],
     showQuestionModal: false,
-    curQuestion: '在我东南45公里以外正在下小雨，我这里雾霾极其严重。',
+    showLoginModal: false,
+    curQuestion: '我是问题',
     curMentor: '匿名反馈',
     curStudent: '匿名反馈1'
   },
@@ -11,6 +12,11 @@ Page({
   addQuestion: function () {
     wx.navigateTo({
       url: '../addques/addques',
+    })
+  },
+  admin: function() {
+    this.setData({
+      showLoginModal: true
     })
   },
   shuffle: function(arr) {

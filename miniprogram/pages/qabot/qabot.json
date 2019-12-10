@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "question-modal": "../../components/question-modal/question-modal"
+    "question-modal": "../../components/question-modal/question-modal",
+    "admin-modal": "../../components/admin-modal/admin-modal"
   }
 }
