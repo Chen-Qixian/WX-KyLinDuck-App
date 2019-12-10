@@ -1,0 +1,8 @@
+.delete {
+  background-color: red;
+  color: white;
+  text-align: center;
+  height: 100%;
+  width: 65px;
+  line-height: 44px;
+}

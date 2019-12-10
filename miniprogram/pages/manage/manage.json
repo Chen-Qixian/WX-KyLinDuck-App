@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-cell": "vant-weapp/cell",
+    "van-cell-group": "vant-weapp/cell-group",
+    "van-swipe-cell": "vant-weapp/swipe-cell"
+  },
+  "backgroundColor": "#F6F6F6",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#424242",
+  "navigationBarTitleText": "Console管理员控制台",
+  "navigationBarTextStyle": "white"
+}

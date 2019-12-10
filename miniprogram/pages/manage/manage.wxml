@@ -1,0 +1,6 @@
+<van-swipe-cell right-width="{{ 65 }}" left-width="{{ 1 }}" wx:for="{{list}}" wx:key="index">
+  <van-cell-group>
+    <van-cell title="问题{{index + 1}}" value="{{item.question}}" />
+  </van-cell-group>
+  <view slot="right" class="delete" data-delid="{{index}}" bindtap="del">删除</view>
+</van-swipe-cell>
