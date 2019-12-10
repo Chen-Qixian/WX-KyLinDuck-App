@@ -6,11 +6,11 @@
 </view>
 
 <van-cell-group>
-  <van-cell title="用户名" value="{{userInfo.nickName}}" />
-  <van-cell title="国家" value="{{userInfo.country}}" />
-  <van-cell title="省/市" value="{{userInfo.province}}" />
-  <van-cell title="市/区" value="{{userInfo.city}}" />
-  <van-cell title="性别" value="{{userInfo.gender}}" />
+  <van-cell title="用户名" value="{{userInfo.nickName}}" icon="user-o" />
+  <van-cell title="国家" value="{{userInfo.country}}" icon="location-o"/>
+  <van-cell title="省/市" value="{{userInfo.province}}" icon="flag-o"/>
+  <van-cell title="市/区" value="{{userInfo.city}}" icon="orders-o"/>
+  <van-cell title="性别" value="{{userInfo.gender}}" icon="friends-o"/>
 </van-cell-group>
 
 <view class="developer">KyLinDuck麒麟鸭科技@陈麒先 荣誉出品</view>
