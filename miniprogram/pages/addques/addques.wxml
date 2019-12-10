@@ -39,5 +39,5 @@
     </view>
   </view>
   <view class="info">-- 导师考核，现在开始! --</view>
-  <view class="subscribe-btn" bindtap="confirmSubscription">上传录入至考核库</view>
+  <view class="subscribe-btn" bindtap="submition">上传录入至考核库</view>
 </view>

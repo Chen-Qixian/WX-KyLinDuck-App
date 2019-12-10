@@ -24,7 +24,8 @@ Page({
     })
   },
   /** 确认上传 */
-  confirmSubscription: function () {
+  submition: function () {
+    let _this = this;
     if(!this.data.question) {
       wx.showModal({
         title: '注意',
@@ -33,6 +34,19 @@ Page({
       })
       return;
     }
+    wx.showModal({
+      title: '提交确认',
+      content: '确认上传考核内容？',
+      confirmColor: '#5ebb8d',
+      cancelColor: '#666',
+      success(res) {
+        if(res.confirm) {
+          _this.confirmSubmition();
+        }
+      }
+    })
+  },
+  confirmSubmition: function() {
     wx.showLoading({
       title: '题目入库中',
       mask: true
