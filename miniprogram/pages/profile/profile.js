@@ -5,27 +5,31 @@ Page({
    */
   data: {
     userInfo: {},
-    showDetail: false,
-    first: true
-  },
-  onGotUserInfo: function(e) {
-    console.log(e);
-    this.setData({
-      userInfo: e.detail.userInfo,
-      showDetail: !this.data.showDetail,
-      first: false
-    });
-  },
-  toggle: function() {
-    this.setData({
-      showDetail: !this.data.showDetail
-    })
   },
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    let _this = this;
+    wx.getUserInfo({
+      success: function(res) {
+        let gender = '',
+            userInfo = res.userInfo
+        if(res.userInfo.gender == 0) {
+          gender = '未知'
+        }
+        else if (res.userInfo.gender == 1) {
+          gender = '男'
+        }
+        else {
+          gender = '女'
+        }
+        userInfo.gender = gender;
+        _this.setData({
+          userInfo: userInfo
+        })
+      }
+    })
   },
 
   /**
