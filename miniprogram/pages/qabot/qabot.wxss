@@ -37,6 +37,7 @@ page {
   line-height: 94rpx;
   text-align: center;
   box-sizing: border-box;
+  box-shadow: -4rpx 8rpx 2rpx #ccc;
 }
 
 .addQuestion {
