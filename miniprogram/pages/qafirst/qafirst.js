@@ -7,8 +7,5 @@ Page({
     this.setData({
       showLoginModal: true
     })
-    // wx.navigateTo({
-    //   url: '../qabot/qabot',
-    // })
   }
 })
