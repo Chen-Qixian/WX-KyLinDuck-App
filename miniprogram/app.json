@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/movie/movie",
     "pages/profile/profile",
+    "pages/movie/movie",
     "pages/comment/comment",
     "pages/qabot/qabot",
     "pages/addques/addques",
