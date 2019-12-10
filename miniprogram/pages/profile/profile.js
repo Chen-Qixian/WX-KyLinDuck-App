@@ -4,7 +4,13 @@ Page({
    * Page initial data
    */
   data: {
-    userInfo: {},
+    userInfo: {
+      nickName: '匿名',
+      country: '未知',
+      province: '未知',
+      city: '未知',
+      gender: '未知'
+    },
   },
   /**
    * Lifecycle function--Called when page load
