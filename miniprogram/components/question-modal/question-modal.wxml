@@ -12,7 +12,7 @@
     </view>
   </view>
   <view class="modal-btn-wrapper">
-    <view class="cancel-btn" bindtap="cancel">取消</view>
-    <view class="confirm-btn" bindtap="cancel">确定</view>
+    <view class="cancel-btn" bindtap="wa">不合格</view>
+    <view class="confirm-btn" bindtap="ac">通过</view>
   </view>
 </view>

@@ -33,8 +33,18 @@ Component({
     clickMask: function() {
       this.setData({ show: false })
     },
-    cancel: function() {
+    ac: function() {
       this.setData({ show: false })
+      wx.showModal({
+        title: '考核通过',
+        content: '请下一位挑战学员接受考核～',
+        showCancel: false,
+        confirmText: '我知道了'
+      })
+    },
+    wa: function() {
+      this.setData({ show: false })
+      this.triggerEvent('wronganswer')
     }
   }
 })

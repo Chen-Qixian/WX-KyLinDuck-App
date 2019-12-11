@@ -40,8 +40,8 @@ Component({
       })
     },
     confirm: function() {
-      console.log(this.data.roomId, this.data.password);
       if(this.data.roomId == ROOMNAME && this.data.password == PASSWORD) {
+        this.setData({ show: false })
         wx.navigateTo({
           url: '../../pages/qabot/qabot',
         })

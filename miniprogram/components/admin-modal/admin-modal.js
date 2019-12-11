@@ -40,13 +40,13 @@ Component({
       })
     },
     confirm: function() {
+      this.setData({ show: false })
       if(this.data.roomId == ROOMNAME && this.data.password == PASSWORD) {
         wx.navigateTo({
           url: '../../pages/manage/manage',
         })
       }
       else {
-        this.setData({ show: false })
         wx.showModal({
           title: '注意',
           content: '用户名或密码错误',
