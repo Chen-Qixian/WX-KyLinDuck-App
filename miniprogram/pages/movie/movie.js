@@ -19,7 +19,6 @@ Page({
         count: 10
       }
     }).then(res => {
-      console.log(res);
       this.setData({
         movieList: this.data.movieList.concat(JSON.parse(res.result).subjects)
       })
