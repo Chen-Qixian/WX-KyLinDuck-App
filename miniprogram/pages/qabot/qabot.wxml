@@ -4,6 +4,6 @@
   <view class="btn addQuestion" bindtap="addQuestion">贡献题目</view>
   <view class="btn ansQuestion" bindtap="ansQuestion">接受挑战!</view>
   <view class="administrator" bindtap="admin">管理员登陆</view>
-  <question-modal show="{{showQuestionModal}}" question="{{curQuestion}}" mentor="{{curMentor}}" student="{{curStudent}}"></question-modal>
+  <question-modal show="{{showQuestionModal}}" question="{{curQuestion}}" mentor="{{curMentor}}" student="{{curStudent}}" bindwronganswer="wrongAnswer"></question-modal>
   <admin-modal show="{{showLoginModal}}"></admin-modal>
 </view>

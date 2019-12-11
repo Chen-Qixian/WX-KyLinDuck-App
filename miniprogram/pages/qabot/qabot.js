@@ -68,7 +68,20 @@ Page({
       questionList: list
     })
   },
-
+  wrongAnswer: function() {
+    let _this = this;
+    wx.showModal({
+      title: '考核不通过',
+      content: '请该名学员继续接受考核！',
+      showCancel: false,
+      confirmText: '我知道了',
+      success(res) {
+        if(res.confirm) {
+          _this.ansQuestion();
+        }
+      }
+    }) 
+  },
   /**
    * Lifecycle function--Called when page load
    */
@@ -77,4 +90,5 @@ Page({
       this.getQuestions();
     }
   }
+
 })
