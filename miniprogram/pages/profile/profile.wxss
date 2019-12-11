@@ -63,3 +63,10 @@
   width: 150rpx;
   margin: 40rpx auto;
 }
+
+.info-btn {
+  position: fixed;
+  height: 100%;
+  width: 750rpx !important;
+  background-color: transparent; 
+}
