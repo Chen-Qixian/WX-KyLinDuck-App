@@ -6,7 +6,9 @@
     "pages/qabot/qabot",
     "pages/addques/addques",
     "pages/qafirst/qafirst",
-    "pages/manage/manage"
+    "pages/manage/manage",
+    "pages/toolbox/toolbox",
+    "pages/weather/weather"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -26,10 +28,10 @@
         "selectedIconPath": "images/qabot-actived.png"
       },
       {
-        "pagePath": "pages/movie/movie",
-        "text": "麒麟影院",
-        "iconPath": "images/film.png",
-        "selectedIconPath": "images/film-actived.png"
+        "pagePath": "pages/toolbox/toolbox",
+        "text": "麒麟工具",
+        "iconPath": "images/toolbox.png",
+        "selectedIconPath": "images/toolbox-actived.png"
       },{
         "pagePath": "pages/profile/profile",
         "text": "我的空间",

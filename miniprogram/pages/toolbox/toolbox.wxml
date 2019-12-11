@@ -1,0 +1,6 @@
+<view class="wrapper">
+  <image src="../../images/background.png" class="background"></image>
+  <image src="../../images/tooltitle.png" class="title"></image>
+  <view class="btn toweather" bindtap="toweather">麒麟天气</view>
+  <view class="btn tomovie" bindtap="tomovie">麒麟影院</view>
+</view>
