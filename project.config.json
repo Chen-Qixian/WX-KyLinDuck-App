@@ -107,6 +107,13 @@
 					"id": -1,
 					"name": "pages/manage/manage",
 					"pathName": "pages/manage/manage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/toolbox/toolbox",
+					"pathName": "pages/toolbox/toolbox",
 					"scene": null
 				}
 			]
