@@ -114,6 +114,13 @@
 					"id": -1,
 					"name": "pages/toolbox/toolbox",
 					"pathName": "pages/toolbox/toolbox",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/weather/weather",
+					"pathName": "pages/weather/weather",
 					"scene": null
 				}
 			]

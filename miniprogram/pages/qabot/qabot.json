@@ -2,5 +2,9 @@
   "usingComponents": {
     "question-modal": "../../components/question-modal/question-modal",
     "admin-modal": "../../components/admin-modal/admin-modal"
-  }
+  },
+  "backgroundColor": "#F6F6F6",
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "KyLinQ&A麒麟问问",
+  "navigationBarTextStyle": "white"
 }

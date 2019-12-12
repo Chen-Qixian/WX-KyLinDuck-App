@@ -64,6 +64,14 @@
   margin: 40rpx auto;
 }
 
+.click {
+  position: fixed;
+  bottom: 2%;
+  right: 35%;
+  height: 60rpx;
+  width: 60rpx;
+}
+
 .info-btn {
   position: fixed;
   height: 100%;

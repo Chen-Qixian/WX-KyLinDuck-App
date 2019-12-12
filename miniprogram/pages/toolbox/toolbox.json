@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "backgroundColor": "#F6F6F6",
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "KyLinToolBox麒麟工具箱",
+  "navigationBarTextStyle": "white"
 }

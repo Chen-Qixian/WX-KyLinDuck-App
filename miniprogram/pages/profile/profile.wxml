@@ -13,6 +13,7 @@
   <van-cell title="性别" value="{{userInfo.gender}}" icon="friends-o"/>
 </van-cell-group>
 
-<image src="../../images/duck.png" class="logo"></image>
+<image src="../../images/duck.png" class="logo duck"></image>
+<image src="../../images/click.png" class="logo click"></image>
 <button class="info-btn" bindgetuserinfo="getInfo" open-type="getUserInfo"></button>
 <view class="developer">KyLinDuck麒麟鸭科技@陈麒先 荣誉出品</view>
