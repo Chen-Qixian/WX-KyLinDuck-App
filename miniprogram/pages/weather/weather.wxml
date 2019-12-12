@@ -1,0 +1,98 @@
+<view class="container">
+  <view class="view_current">
+    <!-- 背景图 -->
+    <image class="view_bg" mode="widthFix" src="{{weather.bg}}"></image>
+    <!-- 上方实时天气外边轮廓 -->
+    <view class="view_top">
+      <!-- 顶部地址栏 -->
+      <view class="tx_address" bindtap="changeLocation">
+        <image id="location-icon" class="left" src="../../images/add-location.png"></image>
+        <text>{{address}}</text>
+        <image id="location-add-icon" class="right" src="../../images/address-icon.png"></image>
+      </view>
+      <!-- 中部实时天气 -->
+      <view class="weahter-box">
+        <!-- 实时气温天气 -->
+        <view class="weather-ter-box">
+          <view class="weather-ter">
+            <text class="tel">{{weather.current.temperature}}</text>
+            <text class="tel-des">{{weather.current.skyDesc}}</text>
+          </view>
+        </view>
+        <!-- 温度风速湿度信息 -->
+        <view class="weather-other">
+          <image src="../../images/tel-icon.png" class="tel"></image>
+          <text>{{weather.current.dayTemperature}}</text>
+          <image src='../../images/wind-icon.png' class="wind" style="transform:{{'rotate('+(45*weather.current.wind_ratate)+'deg)'}}"></image>
+          <text>{{weather.current.grade}}级</text>
+          <image src='../../images/him-icon.png' class="him"></image>
+          <text>{{weather.current.humidity}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- 致谢词 -->
+    <view class="thanks">
+      特别鸣谢：<text class="caiyun">【彩云天气】</text>提供的气象数据支持<image src="../../images/caiyunlogo.png" class="caiyunlogo"></image>
+    </view>
+  </view>
+
+  <view id="view_next">
+    <!-- 查看今明天气 -->
+    <view class='view_today'>
+      <scroll-view id="today_scroll" scroll-x="true" scroll-with-animation="true">
+        <view class="today_list" id='{{item.id}}' wx:for="{{weather.today.list}}" wx:key="day" wx:for-item="item">
+          <text class="today_day">{{item.day}}</text>
+          <view class="today_aqi {{item.aqi.color}}">
+            <text class="daily_aqi_text">{{item.aqi.text}}</text>
+          </view>
+          <image id="today_skyicon" mode="aspectFit" class="today_skyicon" src="{{item.skyicon}}"></image>
+          <text class="today_temp">{{item.temperature}}</text>
+          <text class="today_skydesc">{{item.skydesc}}</text>
+          <view hidden='{{weather.today.list.length-1 === index}}' class="today_line"></view>
+        </view>
+      </scroll-view>
+    </view>
+    <!-- 按小时查看天气 -->
+    <view class="view_hourly">
+      <view id="desc_hourly">{{weather.hourly.description}}</view>
+      <scroll-view id="hourly_scroll" scroll-x="true" scroll-with-animation="true">
+        <view class="hourly_list" wx:for="{{weather.hourly.list}}" wx:key="date" wx:for-item="item">
+          <text class="item" class="{{item.timeClass}}" >{{item.time}}</text>
+          <image id="daily_skyicon" style="margin-top: 36rpx;" mode="aspectFit" class="item" src="{{item.skyicon}}"></image>
+          <text class="item" style="margin-top: 36rpx; font-size: 26rpx">{{item.temperature}}</text>
+          <view class="item" style="margin-top: 36rpx;" id="daily_aqi_item">
+            <text id="daily_aqi_text" class="{{item.aqi.color}}">{{item.aqi.text}}</text>
+          </view>
+          <text class="item" class="{{item.aqi.color}}" style="margin-top: 4rpx;">{{item.aqi.value}}</text>
+        </view>
+      </scroll-view>
+    </view>
+    <!-- 按天查看天气 -->
+    <view class="view_daily">
+      <scroll-view id="daily_scroll" scroll-x="true">
+        <view id="daily_list" wx:for="{{weather.daily.list}}" wx:key="date" wx:for-item="daily">
+          <text class="item" style="color: #333333;">{{daily.weekday}}</text>
+          <text class="item" style="margin-top: 8rpx;color: #AAAAAA; font-size: 24rpx">{{daily.date}}</text>
+          <image id="daily_skyicon" style="margin-top: 36rpx;" mode="aspectFit" class="item" src="{{daily.skyicon}}"></image>
+          <text class="item" style="margin-top: 36rpx; font-size: 26rpx">{{daily.temperature}}</text>
+          <view class="item" style="margin-top: 36rpx;" id="daily_aqi_item">
+            <text id="daily_aqi_text" class="{{daily.aqi.color}}">{{daily.aqi.text}}</text>
+          </view>
+          <text class="item" class="{{daily.aqi.color}}" style="margin-top: 4rpx;">{{daily.aqi.avg}}</text>
+          <view class="item" style="margin-top: 30rpx;">
+            <text class="wind">{{daily.wind.direction}}</text>
+            <text class="wind">{{daily.wind.grade}}</text>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <!-- 生活指数栏 -->
+    <view class="view_life_index">
+      <view class="life_item" mode="aspectFit" wx:for="{{weather.lifeIndexes}}" wx:key="name" wx:for-item="item" >
+        <image class="life_img" src="{{item.src}}" mode="aspectFit"></image>
+        <text class="life_desc">{{item.desc}}</text>
+        <text class="life_name">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>

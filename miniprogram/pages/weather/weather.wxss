@@ -1,0 +1,342 @@
+/* 环境 */
+page {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+}
+.view_current {
+  vertical-align: middle;
+  position: relative;
+  width: 100%;
+}
+/* 背景图 */
+.view_current >.view_bg{
+  width:100%;
+  display: block;
+}
+/* 地址栏 */
+.view_top {
+  position:absolute;
+  top:60rpx;
+  left: 36rpx;
+  right:36rpx;
+  bottom:0;
+  color:#fff;
+}
+.view_top .tx_address{
+  font-size: 30rpx;
+  font-weight: bold;
+  padding: 10rpx 0rpx;
+}
+.tx_address{
+  display: flex;
+}
+.tx_address>image{
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align:center;
+  padding: 6rpx 0rpx;
+}
+.tx_address>image.left{ 
+  margin-right:10rpx;
+}
+.tx_address>image.right{ 
+  margin-left:10rpx;
+}
+.tx_address>text{
+  vertical-align:center;
+}
+/* 实时天气 */
+.weahter-box{
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+}
+.weather-ter-box{
+  position: relative;
+}
+.weather-ter{
+  padding-left: 50rpx;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+.weather-ter .tel{
+ font-size: 164rpx;
+}
+.weather-ter .tel-des{
+  position: absolute;
+  bottom: 30rpx;
+  right:-10rpx;
+  font-size: 32rpx;
+}
+.view_top .weather-other{
+  font-size: 28rpx;
+  text-align: center;
+}
+.weather-other>image{
+  margin-left:20rpx;
+  margin-right: 16rpx;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top:-5rpx;
+}
+.weather-other .tel{
+  width: 20rpx;
+  height: 28rpx;
+  margin-right: 10rpx;
+}
+.weather-other .wind{
+   width: 25rpx;
+   height:25rpx;
+}
+.weather-other .him{
+  width: 20rpx;
+  height: 26rpx;
+  margin-right: 10rpx;
+}
+/* 今明天气 */
+#view_next {
+  padding-top: 1rpx;
+  padding-bottom: 100rpx;
+  background-color: #f8f8f8;
+}
+
+.view_today {
+  width: 750rpx;
+  margin-top: 60rpx;
+  margin-bottom: 100rpx;
+  padding: 10rpx 2rpx;
+  background-color: #fff;
+}
+#today_scroll {
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  overflow: scroll;
+}
+.today_list {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  color: #333;
+  font-size: 26rpx;
+  height: 140rpx;
+  text-align: center;
+}
+.today_day {
+  position: absolute;
+  font-size: 30rpx;
+  left: 36rpx;
+  top: 18rpx;
+}
+.today_temp {
+  position: absolute;
+  font-size: 30rpx;
+  right: 22rpx;
+  top: 20rpx;
+}
+.today_skyicon {
+  position: absolute;
+  right: 22rpx;
+  bottom: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.today_skydesc {
+  position: absolute;
+  font-size: 28rpx;
+  left: 36rpx;
+  bottom: 20rpx;
+}
+.today_line {
+  position: absolute;
+  right: 0rpx;
+  top: 14rpx;
+  height: 118rpx;
+  width: 1rpx;
+  background-color: #D8D8D8
+}
+/* aqi指数 */
+.today_aqi .daily_aqi_text {
+  color: #fff;
+  font-size: 20rpx;
+  padding-top: 2px;
+  vertical-align: center;
+}
+.today_aqi {
+  position: absolute;
+  font-size: 20rpx;
+  left: 110rpx;
+  top: 24rpx;
+  width: 50rpx;
+  height: 30rpx;
+  border-radius: 4rpx;
+  text-align: center;
+  vertical-align: center;
+  line-height: 30rpx;
+}
+.aqi_fresh {
+  color: #35c7d1;
+}
+.today_aqi.aqi_fresh {
+  background-color: #35c7d1;
+}
+.aqi_good {
+  color: #5ebb8d;
+}
+.today_aqi.aqi_good {
+  background-color: #5ebb8d;
+}
+.aqi_light {
+  color: #8bc500;
+}
+.today_aqi.aqi_light {
+  background-color: #8bc500;
+}
+.aqi_med {
+  color: #e29b12;
+}
+.today_aqi.aqi_med {
+  background-color: #e29b12;
+}
+.aqi_heavy {
+  color: #e06641;
+}
+.today_aqi.aqi_heavy {
+  background-color: #e06641;
+}
+.thanks {
+  text-align: center;
+  font-size: 22rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  color: #999;
+  bottom: -300rpx;
+  position: absolute;
+  width: 100%;
+}
+.caiyun {
+  color: #5ebb8d;
+}
+.caiyunlogo {
+  height: 30rpx;
+  width: 30rpx;
+  position: absolute;
+}
+/* 按小时查天气 */
+.view_hourly {
+  padding: 20rpx 0rpx;
+  text-align: center;
+  background-color: #fff;
+}
+#desc_hourly {
+  color: #333333;
+  font-size: 28rpx;
+  margin: 2rpx 0rpx;
+}
+#hourly_scroll {
+  margin-top: 30rpx;
+  height: 100%;
+  width: 750rpx;
+  white-space: nowrap;
+  overflow: scroll;
+}
+.hourly_list {
+  display: inline-block;
+  overflow: scroll;
+  width: 16.66%;
+  color: #333;
+  font-size: 26rpx;
+  height: 100%;
+  text-align: center;
+}
+.item {
+  display: block;
+  text-align: center;
+}
+.hourly_time {
+  color: #aaa;
+  font-size: 24rpx;
+}
+.hourly_time_bold {
+  color: #333;
+  font-size: 25rpx;
+}
+#daily_skyicon {
+  width: 56rpx;
+  height: 56rpx;
+  margin: auto;
+}
+/* 按天查看天气 */
+.view_daily {
+  margin-top: 40rpx;
+  padding: 20rpx 2rpx;
+  background-color: #fff;
+}
+#daily_scroll {
+  height: 100%;
+  width: 750rpx;
+  white-space: nowrap;
+  overflow: scroll;
+}
+#daily_list {
+  display: inline-block;
+  overflow: scroll;
+  width: 20%;
+  color: #333;
+  font-size: 26rpx;
+  height: 100%;
+  text-align: center;
+}
+#daily_aqi_text {
+  font-size: 26rpx;
+  padding: 4rpx 30rpx;
+  vertical-align: center;
+  border-radius: 10rpx;
+}
+.wind {
+  font-size: 24rpx;
+  display: block;
+  height: 36rpx;
+}
+/* 生活指数栏 */
+.view_life_index {
+  margin-top: 40rpx;
+  width: 99.5%;
+  overflow: hidden;
+  padding: 0rpx 0rpx;
+}
+.life_item {
+  background-color: white;
+  display: inline-block;
+  flex-direction: row;
+  justify-content: center;
+  width: 25%;
+  border: 1rpx solid #eee;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 16rpx 2rpx;
+}
+.life_img {
+  display:block;
+  width:60rpx;
+  height:22px;
+  margin:20rpx auto;
+}
+.life_desc {
+  display: block;
+  margin-top: 8rpx;
+  color: #333;
+  font-size: 28rpx;
+}
+.life_name {
+  color: #aaa;
+  font-size: 24rpx;
+}
