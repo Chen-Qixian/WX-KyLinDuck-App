@@ -46,12 +46,12 @@ Page({
       wx.hideLoading();
       this.setData({ 
         curQuestion: this.data.questionList[0].question,
-        curMentor: parseInt(this.data.questionList[0].contriIndex),
-        curStudent: parseInt(this.data.questionList[0].ansIndex),
+        curMentor: this.data.questionList[0].contriIndex,
+        curStudent: this.data.questionList[0].ansIndex,
         showQuestionModal: true     
       })
       this.updateList();
-    }, 300)
+    }, 800)
   },
   getQuestions: function () {
     let _this = this;
