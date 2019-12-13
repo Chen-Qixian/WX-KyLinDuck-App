@@ -5,10 +5,10 @@
     <!-- 上方实时天气外边轮廓 -->
     <view class="view_top">
       <!-- 顶部地址栏 -->
-      <view class="tx_address" bindtap="changeLocation">
-        <image id="location-icon" class="left" src="../../images/add-location.png"></image>
-        <text>{{address}}</text>
-        <image id="location-add-icon" class="right" src="../../images/address-icon.png"></image>
+      <view class="tx_address">
+        <image id="location-icon" class="left" src="../../images/add-location.png" bindtap="changeLocation"></image>
+        <text bindtap="changeLocation">{{address}}</text>
+        <image id="location-add-icon" class="right" src="../../images/address-icon.png" catchtap="getCurLocation"></image>
       </view>
       <!-- 中部实时天气 -->
       <view class="weahter-box">

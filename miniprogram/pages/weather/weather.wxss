@@ -29,7 +29,7 @@ page {
 .view_top .tx_address{
   font-size: 30rpx;
   font-weight: bold;
-  padding: 10rpx 0rpx;
+  padding: 10rpx 0rpx 10rpx 0rpx;
 }
 .tx_address{
   display: flex;
@@ -44,7 +44,7 @@ page {
   margin-right:10rpx;
 }
 .tx_address>image.right{ 
-  margin-left:10rpx;
+  margin-left:16rpx;
 }
 .tx_address>text{
   vertical-align:center;
