@@ -15,7 +15,8 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#5ebb8d",
     "navigationBarTitleText": "KyLinDuck麒麟鸭",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "color": "#707070",
@@ -39,6 +40,11 @@
         "selectedIconPath": "images/profile-actived.png"
       }
     ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于麒麟天气为您提供精准预报"
+    }
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"

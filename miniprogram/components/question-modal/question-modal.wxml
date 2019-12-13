@@ -4,11 +4,11 @@
   <view class="title">导师考核，现在开始～</view>
   <view class="question-content">
     <view class="student">
-      挑战学员 <text class="badge orange">{{ansArray[student]}}</text>
+      挑战学员 <text class="badge orange">{{student}}</text>
     </view>
     <view class="question">{{question}}</view>
     <view class="mentor">
-      灵魂导师 <text class="badge green">{{contriArray[mentor]}}</text>
+      灵魂导师 <text class="badge green">{{mentor}}</text>
     </view>
   </view>
   <view class="modal-btn-wrapper">

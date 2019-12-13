@@ -2,7 +2,7 @@ var app = getApp();
 const db = wx.cloud.database();
 Page({
   data: {
-    contriArray: ['匿名贡献', '先先', '老祁', '枫宝','琦琦','尚纯','亮哥'],
+    contriArray: ['匿名导师', '先先', '老祁', '枫宝','琦琦','尚纯','亮哥'],
     ansArray: ['当前学员', '先先', '老祁', '枫宝', '琦琦', '尚纯', '亮哥'],
     question: '',
     contriIndex: 0,
@@ -51,12 +51,12 @@ Page({
       title: '题目入库中',
       mask: true
     })
-    // console.log(this.data.question, this.data.contriIndex, this.data.ansIndex);
+    // console.log(this.data.question, this.data.contriArray[parseInt(this.data.contriIndex)], this.data.ansArray[parseInt(this.data.ansIndex)]);
     db.collection('questionBase').add({
       data: {
         question: this.data.question,
-        contriIndex: this.data.contriIndex,
-        ansIndex: this.data.ansIndex
+        contriIndex: this.data.contriArray[parseInt(this.data.contriIndex)],
+        ansIndex: this.data.ansArray[parseInt(this.data.ansIndex)]
       }
     }).then(res => {
       wx.hideLoading();
