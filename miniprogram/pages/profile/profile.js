@@ -5,12 +5,15 @@ Page({
    */
   data: {
     userInfo: {
-      nickName: '匿名',
-      country: '未知',
-      province: '未知',
-      city: '未知',
-      gender: '未知'
+      nickName: '',
+      country: '',
+      province: '',
+      city: '',
+      gender: ''
     },
+    showInfo: false,
+    origin: 'origin',
+    clicked: 'clicked'
   },
   getInfo: function(e) {
     let gender = '',
@@ -26,7 +29,10 @@ Page({
     }
     userInfo.gender = gender;
     this.setData({
-      userInfo: userInfo
+      userInfo: userInfo,
+      showInfo: true,
+      origin: '',
+      clicked: ''
     })
   },
   /**
@@ -46,54 +52,5 @@ Page({
         }
       }
     })
-  },
-
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page show
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page hide
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page unload
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * Page event handler function--Called when user drop down
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * Called when page reach bottom
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * Called when user click on the top right corner to share
-   */
-  onShareAppMessage: function () {
-
   }
 })

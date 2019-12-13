@@ -1,9 +1,20 @@
+page {
+  height: 100%;
+  width: 100%;
+}
+
 .profile{
   background: #5ebb8d;
   height: 400rpx;
   text-align: center;
   position: relative;
   width: 100%;
+}
+
+.wrapper {
+  height: 710rpx;
+  width: 100%;
+  position: relative;
 }
 
 .profile-img{
@@ -58,18 +69,36 @@
 }
 
 .logo {
-  border-radius: 50%;
   height: 150rpx;
   width: 150rpx;
-  margin: 40rpx auto;
+  position: absolute;
+  left: 50%;
+  top: 560rpx;
+  transform: scale(1) translate(-50%,-50%);
+  transition: transform 1.5s, top 1.5s;
 }
 
+.origin {
+  margin: auto;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(2);
+}
+/* 设置动画的class要一直保留，淡出动画用opacity */
 .click {
-  position: fixed;
-  bottom: 2%;
-  right: 35%;
+  position: absolute;
+  bottom: 50rpx;
+  right: 250rpx;
   height: 60rpx;
   width: 60rpx;
+  transform: rotate(-20deg);
+  opacity: 0;
+  transition: opacity 1.5s, bottom 1.5s, right 1.5s;
+}
+
+.clicked {
+  bottom: 200rpx;
+  right: 200rpx;
+  opacity: 1;
 }
 
 .info-btn {

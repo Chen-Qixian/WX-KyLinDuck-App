@@ -5,15 +5,17 @@
   <open-data type="userNickName" class="profile-name"></open-data>
 </view>
 
-<van-cell-group>
-  <van-cell title="用户名" value="{{userInfo.nickName}}" icon="user-o" />
-  <van-cell title="国家" value="{{userInfo.country}}" icon="location-o"/>
-  <van-cell title="省/市" value="{{userInfo.province}}" icon="flag-o"/>
-  <van-cell title="市/区" value="{{userInfo.city}}" icon="orders-o"/>
-  <van-cell title="性别" value="{{userInfo.gender}}" icon="friends-o"/>
-</van-cell-group>
+<view class="wrapper">
+  <van-cell-group wx:if="{{showInfo}}">
+    <van-cell title="用户名" value="{{userInfo.nickName}}" icon="user-o" />
+    <van-cell title="国家" value="{{userInfo.country}}" icon="location-o"/>
+    <van-cell title="省/市" value="{{userInfo.province}}" icon="flag-o"/>
+    <van-cell title="市/区" value="{{userInfo.city}}" icon="orders-o"/>
+    <van-cell title="性别" value="{{userInfo.gender}}" icon="friends-o"/>
+  </van-cell-group>
 
-<image src="../../images/duck.png" class="logo duck"></image>
-<image src="../../images/click.png" class="logo click"></image>
+  <image src="../../images/duck.png" class="logo {{origin}}"></image>
+  <image src="../../images/click.png" class="click {{clicked}}"></image> 
+</view>
 <button class="info-btn" bindgetuserinfo="getInfo" open-type="getUserInfo"></button>
 <view class="developer">KyLinDuck麒麟鸭科技@陈麒先 荣誉出品</view>
