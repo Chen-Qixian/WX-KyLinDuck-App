@@ -24,26 +24,45 @@ page {
   left: 17%;
 }
 
+.btn-group {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 400rpx;
+  width: 560rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  bottom: 8%;
+  justify-content: space-around;
+}
+
 .btn {
   color: #5ebb8d;
   background-color: transparent;
   border: 4rpx solid #5ebb8d;
-  height: 100rpx;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50%;
-  line-height: 94rpx;
+  height: 150rpx;
+  width: 170rpx;
+  margin: 20rpx;
   text-align: center;
   box-sizing: border-box;
   border-radius: 10rpx;
   box-shadow: -4rpx 8rpx 2rpx #ccc;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
-.toweather {
-  top: 60%;
+.btn-name {
+  position: absolute;
+  bottom: 0;
+  font-size: 22rpx;
 }
 
-.tomovie {
-  top: 75%;
+.icon {
+  height: 80rpx;
+  width: 80rpx;
+  margin-top: 20rpx;
+  opacity: 0.95;
 }

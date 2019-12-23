@@ -1,6 +1,22 @@
 <view class="wrapper">
   <image src="../../images/background.png" class="background"></image>
   <image src="../../images/tooltitle.png" class="title"></image>
-  <view class="btn toweather" bindtap="toweather">麒麟天气</view>
-  <view class="btn tomovie" bindtap="tomovie">麒麟影院</view>
+  <view class="btn-group">
+    <view class="btn" bindtap="toweather">
+      <image src="../../images/weather.png" class="icon"></image>
+      <text class="btn-name">麒麟天气</text>
+    </view>
+    <view class="btn" bindtap="tomovie">
+      <image src="../../images/film.png" class="icon"></image>
+      <text class="btn-name">麒麟影院</text>
+    </view>
+    <view class="btn" bindtap="totrans">
+      <image src="../../images/translate.png" class="icon"></image>
+      <text class="btn-name">麒麟译译</text>
+    </view>
+    <view class="btn" bindtap="tocalc">
+      <image src="../../images/calc.png" class="icon"></image>
+      <text class="btn-name">麒麟算算</text>
+    </view>
+  </view>
 </view>
