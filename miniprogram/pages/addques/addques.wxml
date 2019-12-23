@@ -34,7 +34,7 @@
         <view class="content">请灵魂导师
           <text class="caiyun-tag">【在这里】</text>写下您的考核内容！
         </view>
-        <textarea placeholder="最多可输入140个字符哦～" bindconfirm="inputChange" bindinput="inputChange" class="questionContent" maxlength="140"></textarea>
+        <textarea value="{{question}}" placeholder="最多可输入140个字符哦～" bindconfirm="inputChange" bindinput="inputChange" class="questionContent" maxlength="140"></textarea>
       </view>
     </view>
   </view>

@@ -63,6 +63,11 @@ Page({
       wx.showToast({
         title: '成功入库'
       })
+      this.setData({ 
+        question: '',
+        ansIndex: 0,
+        contriIndex: 0
+      })
     }).catch(err => {
       wx.showToast({
         title: '上传失败'
